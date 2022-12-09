@@ -40,6 +40,7 @@ export class ClockClass extends React.Component {
     componentWillUnmount() {
         clearInterval(this.timerID)
     }
+    // function to update the date inside the state
     tick(){
         this.setState({
             date: new Date(),
@@ -56,4 +57,5 @@ export class ClockClass extends React.Component {
 		);
 	}
 }
+
 export default ClockFunction;
