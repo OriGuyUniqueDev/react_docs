@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function ClockFunction() {
     // define useState 
     const [date,setDate] = useState(new Date())
-    let timerID2 = setInterval(() => {
+    setInterval(() => {
         //sets new Date every one second
         setDate(new Date())
     }, 1000);
